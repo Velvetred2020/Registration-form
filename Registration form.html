@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration form</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body	{
+				background-color: rgba(233,245,243,0.6);
+				}
+			caption {
+				font: 1.5rem 'Fira Sans', sans-serif;
+				background-color: rgba(0,0,128,0.3);
+				color: rgba(189,255,243,0.9);
+				}
+			
+			
+		</style>
+	</head>
+	<body>
+		<form method="" action="">
+			<table border="1" align="center" width="400" bgcolor="#CCCCCC">
+				<caption>Registration form</caption>
+				<tr>
+					<th>Enter your first name</th>
+					<td><input type="text" name="fn" id="fn1" maxlenght="20" title="enter your first name" placeholder="enter your first name" required/></td>
+				</tr>
+				<tr>
+					<th>Enter your last name</th>
+					<td><input type="text" /></td>
+				</tr>
+				<tr>
+					<th>Enter your password</th>
+					<td><input type="password"/></td>
+				</tr>
+				<tr>
+					<th>ReEnter your password</td>
+					<td><input type="password"/></td>
+				</tr>
+				<tr>
+					<th>Enter your email</th>
+					<td><input type="email"/></td>
+				</tr>
+				<tr>
+					<th>Enter your mobile</th>
+					<td><input type="number"/></td>
+				</tr>
+				<tr>
+					<th>Enter your address</th>
+					<td><textarea rows="8" cols="20"></textarea></td>
+				</tr>
+				<tr>
+
+					<th>Enter your gender</th>
+					<td>
+						male<input type="radio" name="g" value="m"/>
+						female<input type="radio" name="g" value="f"/>
+					</td>
+				</tr>
+				<tr>
+					<th>Select your hobbies</th>
+					<td>
+						reading<input type="checkbox" name="x[]" value="reading"/>
+						chess<input type="checkbox" name="x[]" value="chess"/>
+						dotting<input type="checkbox" name="x[]" value="dotting"/>
+						
+					</td>
+				</tr>
+				<tr>
+						
+					<th>Select your DOB</th>
+					<td>
+						
+						<input type="date" id="start" name="starting-date"  value="" min="1990-01-01" max="2023-12-31"/>
+						
+					</td>
+				</tr>
+				<tr>
+					<th>Select your country</th>
+					<td>
+						<select name="country">
+							<option value="" selected="selected" disable="disable">Select your country</option>
+							<option value="1">Romania</option>
+							<option value="2">Italy</option>
+							<option value="3">United Kingdom</option>
+							<option value="4">France</option>
+							<option value="5">Switzerland</option>
+							<option value="6">Japan</option>
+						</select>
+					</td>
+				<tr>
+					<th>Upload your pic</th>
+					<td><input type="file"/>
+				</tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="Save My Data"/>
+						<input type="reset" value="Reset Data"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+
+	</body>
+</html>
